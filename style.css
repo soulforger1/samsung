@@ -1,0 +1,13 @@
+.redText {
+  color: red;
+  background-color: black;
+  padding: 20px;
+}
+
+h1 {
+  color: green;
+}
+
+#githubTitle {
+  color: blue;
+}
