@@ -91,3 +91,64 @@ body {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
+
+.slider-container {
+  position: relative;
+  max-width: 1440px;
+  width: 100%;
+  margin: auto;
+}
+
+.slider-item {
+  position: relative;
+  width: calc(100% - 120px);
+  height: 600px;
+
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 60px;
+}
+
+.slider-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.slider-item-text-container {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slider-item-text-container h1 {
+  text-align: center;
+}
+
+.slider-item-text-container p {
+  text-align: center;
+}
+
+.slider-container > button {
+  position: absolute;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: navajowhite;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.slider-first-button {
+  left: 0;
+  top: 45%;
+}
+
+.slider-second-button {
+  right: 0;
+  top: 45%;
+}
